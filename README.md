@@ -33,8 +33,8 @@ Things you may want to cover:
 |user_id|references:user|null: false, foreign_key: true|
 
 ### Association
--bolongs_to :user
--belongs_to :group
+- bolongs_to :user
+- belongs_to :group
 
 ## usersテーブル
 
@@ -43,9 +43,9 @@ Things you may want to cover:
 |name|string|null: false, unique: true, index: true|
 
 ### Association
--has_many :messages
--has_many :group_members
--has_many :groups, through: :group_members
+- has_many :messages
+- has_many :group_members
+- has_many :groups, through: :group_members
 
 ## groupsテーブル
 
@@ -54,9 +54,9 @@ Things you may want to cover:
 |name|string|null: false|
 
 ### Association
--has_many :messages
--has_many :group_members
--has_many :users, through: :group_members
+- has_many :messages
+- has_many :group_members
+- has_many :users, through: :group_members
 
 ## groupmembersテーブル
 
